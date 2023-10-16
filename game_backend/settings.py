@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-jb1*qjgfq^dih^uh#@2wy(r4rc#ou!5+xklo8peij(^#7@90b8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['stone-4asd.onrender.com']
+ALLOWED_HOSTS = ['stone-4asd.onrender.com','127.0.0.1' ]
 
 
 # Application definition
@@ -41,14 +41,14 @@ INSTALLED_APPS = [
     'game',
 ]
 
-CHANNEL_LAYERS = {
-    "default": {
-        "BACKEND": "channels_redis.core.RedisChannelLayer",
-        "CONFIG": {
-            "hosts": [("127.0.0.1", 6379)],  # Replace with your Redis server details
-        },
-    },
-}
+# CHANNEL_LAYERS = {
+#     "default": {
+#         "BACKEND": "channels_redis.core.RedisChannelLayer",
+#         "CONFIG": {
+#             "hosts": [("127.0.0.1", 6379)],  # Replace with your Redis server details
+#         },
+#     },
+# }
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

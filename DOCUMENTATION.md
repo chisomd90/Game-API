@@ -8,7 +8,8 @@ Welcome to the WebSocket service for our multiplayer game platform. This service
 
 To connect to the WebSocket service for your game, use the following URL format:
 ```
-https://stone-4asd.onrender.com/ws/game/<game_id>/
+ws://stone-4asd.onrender.com/ws/game/<game_id>/
+# ws: This is the WebSocket protocol identifier.
 ```
 ws/game/<game_id>/: This part of the URL should be customized according to your game's configuration. Replace <game_id> with the specific game's ID or identifier you want to connect to.
 
@@ -23,7 +24,7 @@ To connect to the WebSocket service, you can use WebSocket client libraries for 
 JavaScript
 
 ```
-const gameWebSocket = new WebSocket('https://stone-4asd.onrender.com/ws/game/<game_id>/');
+const gameWebSocket = new WebSocket('ws://stone-4asd.onrender.com/ws/game/<game_id>/');
 
 gameWebSocket.addEventListener('open', (event) => {
     // Connection is open
